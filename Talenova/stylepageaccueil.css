@@ -1,0 +1,240 @@
+
+
+header {
+    background: url("C:\Users\N'golo Kante\Downloads\galaxy png.jpg") center/cover no-repeat;
+    color: rgb(207, 24, 24);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+p {
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+.cta-section {
+    text-align: center;
+    margin: 120px 100px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to right, #4CAF50, #45a049);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.cta-button:hover {
+    background: linear-gradient(to right, #45a049, #4CAF50);
+    transform: scale(1.05);
+}
+
+.cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), transparent 50%, rgba(255, 255, 255, 0.1));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.cta-button:hover::before {
+    opacity: 1;
+}
+
+footer {
+    background: url('footer-background.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.contact-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #222;
+    color: white;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to right, #007BFF, #0056b3);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.contact-button:hover {
+    background: linear-gradient(to right, #0056b3, #007BFF);
+    transform: scale(1.05);
+}
+
+.contact-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), transparent 50%, rgba(255, 255, 255, 0.1));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.contact-button:hover::before {
+    opacity: 1;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        padding: 100px 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .cta-section {
+        margin: 100px 20%;
+    }
+}
+
+.feature-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 40px;
+    text-align: center;
+    background-color: #f2f2f2; /* Couleur de fond */
+    border-top: 5px solid white; /* Bordure supérieure blanche */
+    margin-bottom: 0px;
+    color: black; /* Texte en noir */
+}
+
+.feature-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.feature-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.feature-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.logo {
+    width: 50px; /* Ajustez la taille du logo selon vos besoins */
+    height: 50px;
+    margin-right: 20px;
+}
+
+.info-icon {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.user-account {
+    display: flex;
+    align-items: center;
+}
+
